@@ -147,11 +147,49 @@ a collection of common design and implementation patterns found in applications.
 
 Simple and elegant component-based UI library
 
+#### [Svelte](https://svelte.technology/)
+
+The magical disappearing UI framework.
+
+* The web's obesity crisis, solved. Svelte turns your templates into tiny, 
+framework-less vanilla JavaScript.
+* Simple and familiar. Build apps out of composable, easy-to-write blocks 
+using languages you already know.
+* Stupid fast, rock solid. Compile-time static analysis ensures the browser 
+does no more work than it needs to.
+
+
 ********************************************************************************
 
-### Libraries for plot & other graphics
+### Libraries for plot & other graphics, gallery, etc
 
 *empty*
+
+* [PhotoSwipe](http://photoswipe.com) JavaScript image gallery for mobile and 
+desktop, modular, framework independent.
+
+* [lightbox2](http://lokeshdhakar.com/projects/lightbox2/) The original lightbox script.
+
+* [fancyBox](http://fancyapps.com/fancybox/) is a tool that offers a nice 
+and elegant way to add zooming functionality for images, html content 
+and multi-media on your webpages. It is built on the top of the popular 
+JavaScript framework jQuery and is both easy to implement and a snap to customize.
+
+* [Lightbox for Bootstrap](http://ashleydw.github.io/lightbox/) Utilizes 
+Bootstraps modal plugin to implement a lightbox gallery.
+
+* [Lity](http://sorgalla.com/lity/) is a ultra-lightweight, accessible and 
+responsive lightbox plugin which supports images, iframes and inline content 
+out of the box.
+
+* [Swipebox](http://brutaldesign.github.io/swipebox/) is a jQuery "lightbox" 
+plugin for desktop, mobile and tablet.
+
+* [jQuery lightgallery](https://sachinchoolur.github.io/lightGallery/) A customizable, 
+modular, responsive, lightbox gallery plugin for jQuery.
+
+* [Highslide JS](http://highslide.com/) is an image, media and gallery viewer 
+written in JavaScript. (oldschool :smile: since 2006)
 
 ********************************************************************************
 
@@ -191,7 +229,7 @@ node.js fs.watch / fs.watchFile / fsevents.
 
 ## Other Tools
 
-### Test (TDD, BDD), Check code (Linters), Task Runner, Docs
+### Test (TDD, BDD), Check code (Linters, Parsers), Task Runner, Docs, Transpilers
 
 * [NodeJS Assert](https://nodejs.org/api/assert.html) and 
 [Console.assert](https://developer.mozilla.org/ru/docs/Web/API/Console/assert)
@@ -272,7 +310,31 @@ potential problems in your JavaScript code.
 
 * [JSLint](http://JSLint.com/) The JavaScript Code Quality Tool.
 
+* [Esprima](http://esprima.org/) is a high performance, standard-compliant 
+ECMAScript parser written in ECMAScript (also popularly known as JavaScript).
+ECMAScript parsing infrastructure for multipurpose analysis.
+
+* [UglifyJS](http://lisperator.net/uglifyjs/) is a JavaScript 
+compressor/minifier written in JavaScript. It also contains tools that allow 
+one to automate working with JavaScript code: 
+    * parser which produces an abstract syntax tree (AST), 
+    * code generator, 
+    * compressor (optimizer), 
+    * mangler, 
+    * scope analyzer, 
+    * tree walker, 
+    * tree transformer.
+
+* [Acorn](https://github.com/ternjs/acorn) A tiny, fast JavaScript parser, 
+written completely in JavaScript.
+
+* [Babylon](https://github.com/babel/babylon) is a JavaScript parser used in Babel. 
+    
 * [JSDoc](http://usejsdoc.org/)
+
+* [ESDoc](https://esdoc.org/) is a good documentation generator for JavaScript.
+
+* [Babel](https://babeljs.io/) is a compiler for writing next generation JavaScript.
 
 ********************************************************************************
 
@@ -287,6 +349,9 @@ delivering modularity, performance & extras.
 
 * [immutable-js](http://facebook.github.io/immutable-js/) Immutable persistent 
 data collections for Javascript which increase efficiency and simplicity.
+
+* [Mori](http://swannodette.github.io/mori/) ClojureScript's persistent data 
+structures and supporting API from the comfort of vanilla JavaScript.
 
 * [Ramda](http://ramdajs.com/) A practical functional library 
 for JavaScript programmers.
@@ -333,6 +398,36 @@ framework for cleaner code.
 
 ********************************************************************************
 
+### HTTP Clients
+
+* [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) 
+is an API that provides client functionality for transferring data between a 
+client and a server. (See also: [node-xhr2](https://github.com/pwnall/node-xhr2) 
+and [node-XMLHttpRequest](https://github.com/driverdan/node-XMLHttpRequest))
+
+* [Fetch API](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) provides 
+an interface for fetching resources (including across the network). It will 
+seem familiar to anyone who has used XMLHttpRequest, but the new API provides 
+a more powerful and flexible feature set. 
+(See also [fetch polyfill by github](https://github.github.io/fetch/) and 
+[node-fetch](https://github.com/bitinn/node-fetch))
+
+* [axios](https://github.com/mzabriskie/axios) Promise based HTTP client for 
+the browser and node.js.
+
+* [SuperAgent](http://visionmedia.github.io/superagent/) is a small progressive 
+client-side HTTP request library, and Node.js module with the same API, 
+sporting many high-level HTTP client features. 
+
+* [Request](https://github.com/request/request) is designed to be the simplest 
+way possible to make http calls. It supports HTTPS and follows redirects 
+by default. (See also promisification request - 
+[Request-Promise](https://github.com/request/request-promise))
+
+
+See also `jQuery.ajax()`
+********************************************************************************
+
 ### Other JS cool libs
 
 *empty*
@@ -346,9 +441,15 @@ framework for cleaner code.
 * [JavaScript. The core](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/), 
 [JavaScript. Ядро](http://dmitrysoshnikov.com/ecmascript/ru-javascript-the-core/)
 * [JavaScript books by Dr. Axel Rauschmayer](http://exploringjs.com/)
+* [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
 * [**JavaScript Standard Style Guide !!!**](http://standardjs.com/)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), 
 [Перевод и расширение Airbnb JavaScript Style Guide](https://github.com/uprock/javascript)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
 * [ECMAScript 6 (Overview of ECMAScript 6 features)](https://github.com/lukehoban/es6features)
 * [ECMAScript (Status, process, and documents for ECMA262)](https://github.com/tc39/ecma262)
+
+### News
+
+* [Echo JS](http://www.echojs.com/) is a community-driven news site entirely 
+focused on JavaScript development, HTML5, and front-end news.

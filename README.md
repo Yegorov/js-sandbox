@@ -204,6 +204,19 @@ It is optimized for in-browser use, but it can be used in other
 JavaScript environments, like Rhino and Node. Using a modular script loader 
 like RequireJS will improve the speed and quality of your code.
 
+#### [browserify](http://browserify.org/)
+
+browser-side require() the node.js way.
+
+`require('modules')` in the browser.
+
+Use a node-style require() to organize your browser code and load modules 
+installed by npm.
+
+browserify will recursively analyze all the `require()` calls in your app in 
+order to build a bundle you can serve up to the browser in a single 
+`<script>` tag.
+
 --------------------------------------------------------------------------------
 
 ## Server side JS
@@ -426,11 +439,19 @@ by default. (See also promisification request -
 
 
 See also `jQuery.ajax()`
+
 ********************************************************************************
 
 ### Other JS cool libs
 
-*empty*
+* [Yarn](https://yarnpkg.com/) Fast, reliable, and secure dependency management.
+
+* [nvm](https://github.com/creationix/nvm) Node Version Manager. Simple bash 
+script to manage multiple active node.js versions.
+
+See also [nvm-windows](https://github.com/coreybutler/nvm-windows)
+
+
 
 --------------------------------------------------------------------------------
 

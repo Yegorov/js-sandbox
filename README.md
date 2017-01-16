@@ -168,6 +168,9 @@ does no more work than it needs to.
 * [PhotoSwipe](http://photoswipe.com) JavaScript image gallery for mobile and 
 desktop, modular, framework independent.
 
+* [lightgallery.js](https://sachinchoolur.github.io/lightgallery.js/) Full 
+featured JavaScript image & video gallery. No dependencies.
+
 * [lightbox2](http://lokeshdhakar.com/projects/lightbox2/) The original lightbox script.
 
 * [fancyBox](http://fancyapps.com/fancybox/) is a tool that offers a nice 
@@ -282,6 +285,9 @@ assertions for Node.JS and the browser.
 framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript 
 framework. Thus it's suited for websites, Node.js projects, or anywhere that 
 JavaScript can run.
+
+* [CodeceptJS](http://codecept.io/) Modern Era Acceptance Testing Framework 
+for NodeJS.
 
 * [Sinon.JS](http://sinonjs.org/) Standalone and test framework agnostic 
 JavaScript test spies, stubs and mocks (pronounced "sigh-non").
@@ -461,7 +467,9 @@ See also [nvm-windows](https://github.com/coreybutler/nvm-windows)
 * [MDN JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)
 * [JavaScript. The core](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/), 
 [JavaScript. Ядро](http://dmitrysoshnikov.com/ecmascript/ru-javascript-the-core/)
+* [Javascript by Douglas Crockford](http://www.crockford.com/javascript/)
 * [JavaScript books by Dr. Axel Rauschmayer](http://exploringjs.com/)
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
 * [**JavaScript Standard Style Guide !!!**](http://standardjs.com/)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), 
@@ -471,6 +479,11 @@ See also [nvm-windows](https://github.com/coreybutler/nvm-windows)
 * [ECMAScript (Status, process, and documents for ECMA262)](https://github.com/tc39/ecma262)
 
 ### News
+
+* [JavaScript Weekly](http://javascriptweekly.com/) A free, once–weekly e-mail 
+round-up of JavaScript news and articles.
+
+* [JavaScript Live](https://jslive.com/) Daily JavaScript community news and chat.
 
 * [Echo JS](http://www.echojs.com/) is a community-driven news site entirely 
 focused on JavaScript development, HTML5, and front-end news.

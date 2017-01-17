@@ -344,6 +344,11 @@ one to automate working with JavaScript code:
     * tree walker, 
     * tree transformer.
 
+* [Prettier](https://github.com/jlongster/prettier) is an opinionated 
+JavaScript formatter inspired by refmt with advanced support for language 
+features from ES2017, JSX, and Flow. It removes all original styling and 
+ensures that all outputted JavaScript conforms to a consistent style.
+
 * [Acorn](https://github.com/ternjs/acorn) A tiny, fast JavaScript parser, 
 written completely in JavaScript.
 

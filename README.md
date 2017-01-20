@@ -401,7 +401,10 @@ featured promise library with unmatched performance.
 provides tools for organizing asynchronous code.
 
 * [Async](http://caolan.github.io/async/) is a utility module which provides 
-straight-forward, powerful functions for working with asynchronous JavaScript. 
+straight-forward, powerful functions for working with asynchronous JavaScript.
+
+* [promise-fun](https://github.com/sindresorhus/promise-fun) Promise packages, 
+patterns, chat, and tutorials
 
 * [Redux](http://redux.js.org) Redux is a predictable state container for 
 JavaScript apps. It helps you write applications that behave consistently, run 
@@ -462,7 +465,10 @@ script to manage multiple active node.js versions.
 
 See also [nvm-windows](https://github.com/coreybutler/nvm-windows)
 
+* [Intercooler](http://intercoolerjs.org) is a small jQuery-based library 
+that allows you to add AJAX to your application using HTML attributes.
 
+* [mitt](https://github.com/developit/mitt?) Tiny functional EventEmitter/pubsub.
 
 --------------------------------------------------------------------------------
 

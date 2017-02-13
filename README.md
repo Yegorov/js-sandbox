@@ -456,6 +456,15 @@ See also `jQuery.ajax()`
 
 ********************************************************************************
 
+### NLP, Text Processing, etc
+
+* [talisman](https://github.com/Yomguithereal/talisman) A straightforward & 
+modular NLP, machine learning & fuzzy matching library for JavaScript. 
+
+
+
+********************************************************************************
+
 ### Other JS cool libs
 
 * [Yarn](https://yarnpkg.com/) Fast, reliable, and secure dependency management.

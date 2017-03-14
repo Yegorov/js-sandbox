@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Hello</h1>
+        <input type="text" v-model="text">
+        <input type="text" :placeholder="reverseText">
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            text: ""
+        },
+        computed: {
+            reverseText() {
+                return this.text.split('').reverse().join('');
+            }
+        }
+    });
+    </script>
+</body>
+</html>

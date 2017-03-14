@@ -1,0 +1,21 @@
+How I learned React & Redux
+https://iot-for-all.com/how-i-learned-react-redux-63087d7cf345#.ae19p0dz0
+
+React.js Fundamentals курс
+https://online.reacttraining.com/courses/reactjsfundamentals/lectures/821020
+
+Про Nodejs
+https://gomix.com/#!/project/node-beginner
+
+
+https://dou.ua/lenta/digests/frontend-digest-20/
+	https://medium.com/@enogrob/svelte-framework-without-the-framework-7166cdcb2172#.eqq0a3zf7
+	https://github.com/sveltejs/svelte
+
+	https://medium.com/statuscode/the-18-most-popular-node-links-of-2016-3259cacfcf18#.l60nx22g1
+	https://webapplog.com/you-dont-know-node/#main
+
+http://www.nfriedly.com/techblog/2009/06/advanced-javascript-objects-arrays-and-array-like-objects/
+
+https://medium.com/@sapegin/what-to-learn-in-2017-if-youre-a-frontend-developer-b6cfef46effd#.m5y8b6sg3
+https://medium.com/@gucol_lu/%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%BA%D0%B0-%D0%BA%D1%83%D0%B4%D0%B0-%D0%B8%D0%B4%D1%82%D0%B8-%D0%B8-%D1%87%D1%82%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-5397d1185a10#.e421f9s7n

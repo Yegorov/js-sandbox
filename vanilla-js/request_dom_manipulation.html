@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test XMLHTTPRequest and DOM-manipulation</title>
+    <style>
+    li.star {
+        border: solid 1px green;
+        margin: 2px;
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+    Guthub Stars
+    <ul id="star_list">
+    </ul>
+    <button id="load_btn">Load</button>
+    </div>
+    <script>
+        var nextUrl = "";
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.github.com/users/yegorov/starred');
+        //xhr.setRequestHeader('X-Prototype-Version', null);
+        xhr.setRequestHeader('X-Requested-With', null);
+        xhr.setRequestHeader('Accept', 'application/vnd.github.v3.star+json');
+        xhr.onload = function() {
+            //console.log(xhr);
+            //document.getElementById('app').innerHTML = xhr.responseText;
+            var res = JSON.parse(xhr.responseText);
+            nextUrl = xhr.getResponseHeader('Link').match(/<(.*?)>/)[1];
+            var ul = document.getElementById('star_list');
+            res.forEach(function(el) {
+              var li = document.createElement('li');
+              
+              (function(li) {
+                var delDiv = document.createElement('div');
+                delDiv.setAttribute('data-text', "hello world");
+                delDiv.style.color = 'white';
+                delDiv.style.backgroundColor = 'red';
+                delDiv.style.cursor = "pointer";
+                delDiv.style.float = 'right';
+                delDiv.textContent = 'X';
+                li.appendChild(delDiv)
+                delDiv.onclick = function() {
+                  //li.style.color = 'red';
+                  li.parentElement.removeChild(li);
+                }
+              })(li)
+              
+              //console.log(el)
+              //li.innerHTML = el.repo.full_name + "<a href=\"" + el.repo.html_url +"\"><b> " + el.repo.description + "</b></a>";
+              var a = document.createElement('a');
+              a.href = el.repo.html_url;
+              li.appendChild(a);
+              var textName = document.createTextNode(el.repo.name + " by " + el.repo.owner.login);
+              var textDesc = document.createTextNode(el.repo.description);
+              a.appendChild(textName);
+              a.appendChild(document.createElement('br'));
+              var b = document.createElement('b');
+              b.appendChild(textDesc);
+              a.appendChild(b)
+              li.className = 'star';
+              li.title =  el.starred_at;
+              ul.appendChild(li);
+            });
+        };
+        xhr.send(null);
+        
+        document.getElementById('load_btn').onclick = function() {
+          var request = new XMLHttpRequest();
+          request.open('GET', nextUrl);
+          request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+          request.setRequestHeader('Accept', 'application/vnd.github.v3.star+json');
+          console.log(request)
+          request.onload = function() {
+            var res = JSON.parse(request.responseText);
+            nextUrl = request.getResponseHeader('Link').match(/<(.*?)>/)[1];
+            var ul = document.getElementById('star_list');
+            res.forEach(function(el) {
+              var li = document.createElement('li');
+              //console.log(el)
+              li.innerHTML = el.repo.full_name + "<b> " + el.repo.description + "</b>";
+              li.className = 'star';
+              li.title =  el.starred_at;
+              ul.appendChild(li);
+            });
+          }
+          request.send();
+        };
+    </script>
+</body>
+</html>

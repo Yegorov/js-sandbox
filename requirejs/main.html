@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test RequireJS</title>
+    <script data-main="config" src="http://requirejs.org/docs/release/2.3.2/minified/require.js"></script>
+    <script>
+    requirejs(['app'], function(app) {
+        app.logIt();
+        console.log(app.testvar);
+        document.getElementById("req").textContent += " " + app.testvar + "!";
+    });
+    </script>
+</head>
+<body>
+    <h1 id="req">Test RequireJS!</h1>
+    <script>
+    requirejs(['app'], function(app) {
+        alert(app.testvar);
+    });
+    </script>
+</body>
+</html>

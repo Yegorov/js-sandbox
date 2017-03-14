@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue js</title>
+    <style>
+    .color-red {
+        color: red;
+    }
+    .color-green {
+        color: green;
+    }
+    </style>
+</head>
+<body>
+    <h1>Test 1</h1>
+    <div id="root">
+        <input type="text" id="myInput" v-model="message">
+        <p>Вы ввели: {{ message }} </p>
+    </div>
+    
+    <h1>Test 2</h1>
+    <div id="root2">
+        {{foo}} - {{name}}
+        <ul>
+            <li v-for="n in names"> {{n}}</li>
+            <br>
+            <li v-for="n in names" v-text="n"></li>
+        </ul>
+        <input id="text" type="text" v-model="newName">
+        <!--<button id="addBtn" v-on:click="onClick">Add Name</button>-->
+        <button id="addBtn" @click="onClick">Add Name</button>
+    </div>
+    
+    <h1>Test 3</h1>
+    <div id="root3">
+        <!--<button v-on:click="myMethod" v-bind:title="title">My button</button>-->
+        <button @click="myMethod" :title="title">My button</button>
+        <h2 :class='className' >Это текст</h2>
+        <h2 :class="{ 'isLoading': true}" @click="toggle">Hello world</h2>
+    </div>
+    
+    <h1><Test</h1>
+    <div id="root4">
+        <h2 v-text="new Date()"></h2>
+        <h2> 
+            {{ message.split('').reverse().join('') }}
+        </h2>
+        <h2> 
+            {{ reversedMessage }}
+        </h2>
+        <h2>All Tasks</h2>
+        <ul>
+            <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li>
+        </ul>
+        <h2>Inclompleted Tasks</h2>
+        <ul>
+            <li v-for="task in incompleteTasks" v-text="task.description"></li>
+        </ul>
+    </div>
+    
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    
+    <script>
+        // Test 1
+        var data = { // let data
+            message: "Hello world"
+        };
+        
+        var vm1 = new Vue({
+            el: "#root",
+            data: data
+        });
+        
+        // Test 2
+        var vm2 = new Vue({
+            el: "#root2",
+            data: {
+                foo: 'foo',
+                name: 'Ivan',
+                newName: '',
+                names: ['Joe', 'Jane', 'Jack']
+            },
+            mounted() {
+                //alert('Ready');
+                // Old style
+                /*document.querySelector('#addBtn')
+                .addEventListener('click', function() {
+                    var name = document.querySelector('#text');
+                    vm2.names.push(name.value);
+                    name.value = "";
+                });
+                */
+            },
+            methods: {
+                onClick: function() {
+                    this.names.push(this.newName);
+                    this.newName = "";
+                },
+                addName() {
+                    alert('test this');
+                }
+            }
+        });
+        
+        
+        // Test 3
+        var vm3 = new Vue({
+            el: '#root3',
+            data: {
+                title: 'Now title set in JS',
+                className: 'color-red',
+                isLoading: false
+            },
+            methods: {
+                myMethod() {
+                    this.title = 'change';
+                    
+                },
+                toggle() {
+                    this.className = this.isLoading ? 'color-green' : 'color-red';
+                    this.isLoading = !this.isLoading;
+                }
+            }
+            
+        });
+        
+        // Test 4
+        var vm4 = new Vue({
+            el: "#root4",
+            data: {
+                message: "hello world",
+                tasks: [
+                    { description: "1. kjsdnkjsdnfskdf", completed: false },
+                    { description: "2. kjsdnkjsdnfskdf", completed: true },
+                    { description: "3. kjsdnkjsdnfskdf", completed: true },
+                    { description: "4. kjsdnkjsdnfskdf", completed: false },
+                    { description: "5. kjsdnkjsdnfskdf", completed: true },
+                    { description: "6. kjsdnkjsdnfskdf", completed: false },
+                ]
+            },
+            computed: {
+                reversedMessage() {
+                    return this.message.split('').reverse().join('');
+                },
+                incompleteTasks() {
+                    return this.tasks.filter(task => ! task.completed)
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>

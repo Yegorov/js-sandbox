@@ -406,6 +406,10 @@ straight-forward, powerful functions for working with asynchronous JavaScript.
 * [promise-fun](https://github.com/sindresorhus/promise-fun) Promise packages, 
 patterns, chat, and tutorials
 
+* [each-promise](https://github.com/tunnckoCore/each-promise) Asynchronous 
+control flow library for now and then. Iterate over promises, promise-returning 
+or async/await functions in series or parallel.
+
 * [Redux](http://redux.js.org) Redux is a predictable state container for 
 JavaScript apps. It helps you write applications that behave consistently, run 
 in different environments (client, server, and native), and are easy to test. 
@@ -451,8 +455,10 @@ way possible to make http calls. It supports HTTPS and follows redirects
 by default. (See also promisification request - 
 [Request-Promise](https://github.com/request/request-promise))
 
-
 See also `jQuery.ajax()`
+
+* [unfetch](https://github.com/developit/unfetch) Tiny 500b fetch "barely-polyfill"
+
 
 ********************************************************************************
 
@@ -478,6 +484,10 @@ See also [nvm-windows](https://github.com/coreybutler/nvm-windows)
 that allows you to add AJAX to your application using HTML attributes.
 
 * [mitt](https://github.com/developit/mitt?) Tiny functional EventEmitter/pubsub.
+
+* [1-liners](https://github.com/1-liners/1-liners) Functional tools that 
+couldn’t be simpler. We’re proud to present 1-liners – a dead simple functional 
+utility belt. 121 one-liner functions (and counting).
 
 --------------------------------------------------------------------------------
 

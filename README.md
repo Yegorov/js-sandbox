@@ -497,6 +497,10 @@ that allows you to add AJAX to your application using HTML attributes.
 couldn’t be simpler. We’re proud to present 1-liners – a dead simple functional 
 utility belt. 121 one-liner functions (and counting).
 
+* [Sweet](https://www.sweetjs.org/) brings the hygienic macros of languages 
+like Scheme and Rust to JavaScript. Macros allow you to sweeten the syntax 
+of JavaScript and craft the language you always wanted.
+
 --------------------------------------------------------------------------------
 
 ## Links
@@ -507,6 +511,7 @@ utility belt. 121 one-liner functions (and counting).
 [JavaScript. Ядро](http://dmitrysoshnikov.com/ecmascript/ru-javascript-the-core/)
 * [Javascript by Douglas Crockford](http://www.crockford.com/javascript/)
 * [JavaScript books by Dr. Axel Rauschmayer](http://exploringjs.com/)
+* [Speaking JavaScript](http://speakingjs.com/es5/index.html)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
 * [**JavaScript Standard Style Guide !!!**](http://standardjs.com/)

@@ -202,6 +202,14 @@ written in JavaScript. (oldschool :smile: since 2006)
 javascript library without any dependency.
 
 
+### Editor
+
+* [Ace](https://ace.c9.io/) is an embeddable code editor written in JavaScript. 
+It matches the features and performance of native editors such as Sublime, 
+Vim and TextMate. It can be easily embedded in any web page and JavaScript 
+application. Ace is maintained as the primary editor for Cloud9 IDE and is 
+the successor of the Mozilla Skywriter (Bespin) project. 
+
 ********************************************************************************
 
 ### Other things for browsers

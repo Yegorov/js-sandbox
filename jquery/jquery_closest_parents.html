@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Test</title>
+  <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('a.link').on('click', function(e) {
+        e.preventDefault();
+        console.log(e.currentTarget);
+        a = $(this).closest('.my')
+        console.log(a)
+        console.log(a.data('test'))
+      });
+    });
+  </script>
+</head>
+
+<div class="my" data-test="other">
+  <div>
+    <div class="my" data-test="hello world from google link">
+      <div>
+        <p>sdfsdfsdf </p>
+        <a class="link" href="https://google.com">Google</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div class="my" data-test="hello world fron yandex link">
+      <div>
+        <p>sdfsdfsdf </p>
+        <a class="link" href="https://yandex.ru">Yandex</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="https://vk.com">Vk</a>
+<a href="https://vk.com">Vk</a>
+<a href="https://vk.com">Vk</a>
+<a href="https://vk.com">Vk</a>
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Hello React!</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // React code will go here
+      class App extends React.Component {
+          render() {
+              return (
+                 <h1>Hello React!</h1>
+              );
+          }
+      }
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+
+</body>
+
+</html>
+
+<!-- https://www.taniarascia.com/getting-started-with-react/
+https://reactjs.org/docs/state-and-lifecycle.html
+
+https://ant.design/components/date-picker/
+https://github.com/ant-design/ant-design/issues/10644#issuecomment-402559268
+https://github.com/ant-design/ant-design/issues/9565
+
+https://github.com/axios/axios
+https://reactjs.org/docs/components-and-props.html
+https://maxfarseer.gitbooks.io/react-router-course-ru/content/dopisivaem_routi.html
+https://stackoverflow.com/questions/36651583/dynamically-add-child-components-in-react -->
